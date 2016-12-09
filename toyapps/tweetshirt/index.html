@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <title>T恤订制</title>
+    <link rel="stylesheet" href="tweetshirt.css">
+    <script src="tweetshirt.js"></script>
+</head>
+<body>
+<h1>TweetShirt</h1>
+<canvas id="can" width="600" height="200">
+    您的浏览器不支持画布元素,请升级到
+    <a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
+       target="_blank" title="微软官方浏览器下载">最新版本</a>
+    的浏览器
+</canvas>
+
+<form>
+    <p>
+        <label for="backgroundColor">选择背景颜色</label>
+        <select id="backgroundColor">
+            <option value="white" selected>白色</option>
+            <option value="black">黑色</option>
+        </select>
+    </p>
+    <p>
+        <label for="shape">圆形还是方形?</label>
+        <select id="shape">
+            <option value="none" selected>没有图形</option>
+            <option value="circles">圆形图案</option>
+            <option value="squares">方形图案</option>
+            <option value="face">笑脸图案</option>
+        </select>
+    </p>
+    <p>
+        <label for="foregroundColor">选择文本颜色</label>
+        <select id="foregroundColor">
+            <option value="black" selected>黑色</option>
+            <option value="white">白色</option>
+        </select>
+    </p>
+    <p>
+        <label for="tweets">摘录的微博</label>
+        <select id="tweets">
+
+        </select>
+    </p>
+    <p>
+        <input type="button" id="preview" value="预览">
+    </p>
+</form>
+<script src="tweets.json"></script>
+</body>
+</html>
