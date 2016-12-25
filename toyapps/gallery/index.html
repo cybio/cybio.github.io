@@ -2,16 +2,15 @@
 <html lang="cmn-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>画廊效果图片切换</title>
-    <link rel="stylesheet" href="gallery.css">
+    <title>图片散列特效</title>
+    <link rel="stylesheet" href="gallery.css" type="text/css">
 </head>
-<body onselectstart="return false;">
-
+<body>
     <div class="wrap" id="wrap">
-        <div class="photo photo-front" onclick="turn(this);" id="photo{{index}}">
+        <div class="photo photo-front" id="photo_{{index}}">
             <div class="photo-wrap">
                 <div class="side side-front">
-                    <p class="image"><img src="images/{{img}}"></p>
+                    <p class="image"><img src="images/__img__.jpg" alt=""></p>
                     <p class="caption">{{caption}}</p>
                 </div>
                 <div class="side side-back">
@@ -20,7 +19,7 @@
             </div>
         </div>
     </div>
-<script src="data.js"></script>
-<script src="gallery.js"></script>
+
+    <script src="gallery.js"></script>
 </body>
 </html>
